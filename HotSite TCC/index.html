@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ZELO: plataforma de apoio à organização de medicamentos e acompanhamento de cuidados.">
+    <title>ZELO</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="login-screen" id="login" aria-labelledby="loginTitle">
+    <div class="login-card">
+        <div class="login-form-panel">
+            <a href="#login" class="login-logo" aria-label="ZELO">
+                <img src="zelo-logo (2).png" alt="">
+                <span>ZELO</span>
+            </a>
+
+            <div class="login-heading">
+                <span class="section-tag">BEM-VINDO AO ZELO</span>
+                <h1 id="loginTitle">Acesse o HotSite</h1>
+                <p>Entre para conhecer uma forma mais organizada de cuidar.</p>
+            </div>
+
+            <form class="login-form" id="loginForm">
+                <label for="loginEmail">E-mail</label>
+                <input type="email" id="loginEmail" name="email" placeholder="voce@exemplo.com" autocomplete="username" required>
+
+                <label for="loginPassword">Senha</label>
+                <input type="password" id="loginPassword" name="password" placeholder="Digite sua senha" autocomplete="current-password" required>
+
+                <label class="notification-option" for="enableNotifications">
+                    <input type="checkbox" id="enableNotifications">
+                    <span>Quero receber notificações do ZELO neste navegador</span>
+                </label>
+                <p class="notification-note" id="notificationNote" aria-live="polite">
+                    Na demonstração, você recebe apenas um aviso ao entrar. Lembretes programados não estão conectados.
+                </p>
+
+                <button class="btn btn-primary" type="submit">Entrar <span aria-hidden="true">→</span></button>
+                <p class="login-notice">Demonstração acadêmica: o formulário não valida credenciais nem envia ou armazena seus dados.</p>
+            </form>
+        </div>
+
+        <div class="login-visual">
+            <div>
+                <span class="login-eyebrow">Mais cuidado, mais tranquilidade</span>
+                <h2>Sua rotina de cuidados em um só lugar.</h2>
+                <p>Conheça o ZELO e organize informações de medicamentos com mais praticidade.</p>
+            </div>
+            <img src="imAGEM DO APP.jpg" alt="Prévia do aplicativo ZELO em computador e celular">
+            <div class="login-visual-footer"><span aria-hidden="true">✓</span> Organização para quem cuida e quem é cuidado</div>
+        </div>
+    </div>
+</section>
+
+<div id="siteContent" hidden>
+<header class="header">
+    <div class="container nav-container">
+        <a href="#inicio" class="logo" aria-label="ZELO início">
+            <img src="zelo-logo (2).png" alt="logo do zelo ">
+            <span>ZELO</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+            <a href="#login" id="logoutButton">Sair</a>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#dificuldade-do-projeto">Dificuldade do Projeto</a>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#seguranca">Segurança</a>
+            <a href="#equipe">Equipe</a>
+            <a href="#contato" class="nav-button">Contato</a>
+        </nav>
+    </div>
+</header>
+
+    <section class="hero" id="inicio">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Seu cuidado, mais organizado e tranquilo.</h1>
+                <h2>Organize a rotina com o ZELO.</h2>
+                <p>
+                    Uma plataforma de apoio à organização de medicamentos,
+                    criada para facilitar o acompanhamento, reduzir a falha de memória
+                    e trazer mais segurança no dia a dia de quem cuida e quem é cuidado.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#sobre" class="btn btn-primary">Conheça o ZELO →</a>
+                    <a href="#dificuldade-do-projeto" class="btn btn-outline">Saiba mais</a>
+                </div>
+
+                <div class="hero-stats" aria-label="estatísticas do projeto">
+                    <div>
+                        <strong>1.2K</strong>
+                        <span>registros</span>
+                    </div>
+                    <div>
+                        <strong>98%</strong>
+                        <span>clareza</span>
+                    </div>
+                    <div>
+                        <strong>24/7</strong>
+                        <span>organização</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="device-card">
+                    <img src="imAGEM DO APP.jpg" alt="Visualização do aplicativo ZELO em desktop e mobile">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-features" id="dificuldade-do-projeto">
+        <div class="container">
+            <h2>Dificuldade do Projeto</h2>
+
+            <div class="quick-grid">
+                <a href="#como-funciona" class="quick-card">
+                    <img src="Aggenta de horariod.png" alt="agenda de horarios">
+                    <p>Agenda de horários</p>
+                </a>
+
+                <a href="#sobre" class="quick-card">
+                    <img src="medicamentos novo.png" alt="medicamentos">
+                    <p>Medicamentos</p>
+                </a>
+
+                <a href="#beneficios" class="quick-card">
+                    <img src="descontos tcc.png" alt="descontos">
+                    <p>Descontos</p>
+                </a>
+
+                <a href="#publico" class="quick-card">
+                    <img src="Acompalhamento.png" alt="acompanhamento">
+                    <p>Acompanhamento</p>
+                </a>
+            </div>
+
+            <div class="purpose-card">
+                <h3>Propósito do ZELO</h3>
+                <p>
+                    O ZELO é um projeto que propõe uma solução digital para auxiliar pessoas sob cuidados
+                    e seus cuidadores na organização de informações relacionadas aos medicamentos.
+                </p>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="section" id="sobre">
+        <div class="container about-grid">
+            <div class="about-visual">
+                <img src="zelo-logo (2).png" alt="logo do site">
+                <span>ZELO</span>
+                <small>Cuidado e organização de medicamentos</small>
+            </div>
+
+            <div class="section-content">
+                <span class="section-tag">SOBRE O PROJETO</span>
+                <h2>Mais organização para uma rotina de cuidados.</h2>
+                <p>
+                    O ZELO é um projeto que propõe uma solução digital para auxiliar pessoas sob cuidados
+                    e seus cuidadores na organização de informações relacionadas aos medicamentos.
+                </p>
+                <p>
+                    A plataforma reúne recursos de cadastro, agenda, anotações e histórico, facilitando a
+                    consulta das informações registradas com praticidade e clareza.
+                </p>
+                
+                <a href="#recursos" class="text-link">Conheça as funcionalidades →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light" id="publico">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-tag">PARA QUEM É O ZELO?</span>
+                <h2>Cuidado que envolve pessoas.</h2>
+                <p>Uma proposta pensada para apoiar diferentes necessidades de acompanhamento.</p>
+            </div>
+
+            <div class="two-cards">
+                <article class="info-card">
+                    <div class="card-icon">🧓</div>
+                    <h3>Pessoas sobre cuidados</h3>
+                    <p>
+                        Pessoas que precisam de apoio para organizar seus registros e acompanhar sua rotina de medicamentos.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Cuidadores</h3>
+                    <p>
+                        Pessoas responsáveis pelo acompanhamento e organização das informações da rotina de cuidados.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="recursos">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-tag">RECURSOS DO SISTEMA</span>
+                <h2>O que você encontra no ZELO?</h2>
+                <p>Ferramentas para facilitar a organização diária.</p>
+            </div>
+
+            <div class="features-grid">
+                <article class="feature-card">
+                    <img src="cadasto de medicamento.png" alt="Cadastro de medicamentos">
+                    <h3>Cadastro de medicamentos</h3>
+                    <p>Registre nomes, orientações e horários conforme as informações recebidas.</p>
+                </article>
+
+                <article class="feature-card">
+                    <img src="Aggenta de horariod.png" alt="agenda de horario">
+                    <h3>Agenda de horários</h3>
+                    <p>Consulte os horários cadastrados para organizar a rotina.</p>
+                </article>
+
+                <article class="feature-card">
+                    <img src="" alt="anotações">
+                    <h3>Confirmação de registros</h3>
+                    <p>Registre as confirmações relacionadas à rotina de medicamentos.</p>
+                </article>
+
+                <article class="feature-card">
+                   <img src="descontos tcc.png" alt="descontos" >
+                    <h3>Descontos</h3>
+                    <p>“Cuidar da saúde ficou ainda mais fácil! Aproveite nossos descontos especiais e garanta mais praticidade e economia no cuidado com seus medicamentos.” 💚</p>
+                </article>
+
+                <article class="feature-card">
+                <img src="anotação  tcc.png" alt="anotações" >
+                    <h3>Anotações</h3>
+                    <p>Adicione observações importantes sobre a rotina de cuidados.</p>
+                </article>
+
+                <article class="feature-card">
+                    <img src="perfil do usuario tcc.png" alt="perfil de usuario">
+                    <h3>Perfil do usuário</h3>
+                    <p>Organize as informações básicas do usuário do sistema.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light" id="demonstracao">
+        <div class="container demo-grid">
+            <div>
+                <span class="section-tag">DEMONSTRAÇÃO</span>
+                <h2>Uma experiência simples e organizada.</h2>
+                <p>
+                    O sistema ZELO foi planejado para reunir informações em uma interface intuitiva,
+                    com acesso às principais ferramentas de organização.
+                </p>
+                <a href="#contato" class="btn btn-primary">Saiba mais sobre o projeto</a>
+            </div>
+
+            <div class="demo-screen">
+                <div class="demo-top">
+                    <img src="zelo-logo (2).png" alt="logo">
+                    <span>Meu painel</span>
+                </div>
+                <div class="demo-welcome">
+                    <small>PAINEL PRINCIPAL</small>
+                    <h3>Bem-vindo ao ZELO!</h3>
+                    <p>Organize sua rotina de cuidados.</p>
+                </div>
+                <div class="demo-stats">
+                    <div><strong>01</strong><span>Agenda</span></div>
+                    <div><strong>02</strong><span></span></div>
+                    <div><strong>03</strong><span>Perfil</span></div>
+                </div>
+                <div class="demo-line"></div>
+                <div class="demo-line short"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="como-funciona">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-tag">PASSO A PASSO</span>
+                <h2>Como funciona?</h2>
+                <p>Conheça o fluxo básico de utilização da plataforma.</p>
+            </div>
+
+            <div class="steps-grid">
+                <article class="step-card">
+                    <span class="step-number">01</span>
+                    <h3>Organize seu perfil</h3>
+                    <p>Cadastre as informações básicas do usuário.</p>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">02</span>
+                    <h3>Cadastre os medicamentos</h3>
+                    <p>Adicione as informações e os horários orientados.</p>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">03</span>
+                    <h3>Acompanhe a agenda</h3>
+                    <p>Consulte os registros organizados por horário.</p>
+                </article>
+
+                <article class="step-card">
+                    <span class="step-number">04</span>
+                    <h3>Descontos especiais</h3>
+                    <p>Economize no cuidado com seus medicamentos. Consulte nossos descontos disponíveis!.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light" id="acessibilidade">
+        <div class="container about-grid">
+            <div class="section-content">
+                <span class="section-tag">ACESSIBILIDADE</span>
+                <h2>Um sistema pensado para facilitar o uso.</h2>
+                <p>
+                    O projeto busca oferecer uma navegação clara, textos objetivos, organização visual
+                    e elementos de fácil identificação.
+                </p>
+                <p>
+                    A proposta é tornar a experiência mais simples para diferentes pessoas e necessidades.
+                </p>
+            </div>
+
+            <div class="accessibility-box">
+                <div>◉</div>
+                <h3>Clareza em cada etapa.</h3>
+                <p>Interface organizada, navegação intuitiva e informações apresentadas de forma objetiva.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="beneficios">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-tag">BENEFÍCIOS</span>
+                <h2>Mais praticidade na organização.</h2>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit"><span>✓</span> Centralização de informações</div>
+                <div class="benefit"><span>✓</span> Consulta de horários</div>
+                <div class="benefit"><span>✓</span> Registros organizados</div>
+                <div class="benefit"><span>✓</span> Apoio à rotina de cuidados</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light" id="seguranca">
+        <div class="container security-content">
+            <div class="security-icon">♧</div>
+            <span class="section-tag">SEGURANÇA E PRIVACIDADE</span>
+            <h2>Seus registros merecem cuidado.</h2>
+            <p>
+                Nesta versão acadêmica local, as informações são armazenadas no navegador do aparelho utilizado.
+                O armazenamento não representa um serviço de sincronização ou backup em nuvem.
+            </p>
+            <p>
+                Para a apresentação, utilize somente dados fictícios. O ZELO é uma ferramenta de organização
+                e não substitui orientações de profissionais de saúde.
+            </p>
+        </div>
+    </section>
+
+    <section class="section" id="faq">
+        <div class="container faq-container">
+            <div class="section-heading">
+                <span class="section-tag">DÚVIDAS FREQUENTES</span>
+                <h2>Perguntas frequentes.</h2>
+            </div>
+
+            <div class="faq-list">
+                <article class="faq-item">
+                    <button class="faq-question">
+                        O que é o ZELO?
+                        <span>＋</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>É uma plataforma acadêmica de apoio à organização de medicamentos e acompanhamento de registros de cuidados.</p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question">
+                        Quem pode utilizar o sistema?
+                        <span>＋</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O projeto é direcionado a pessoas sob cuidados e cuidadores que precisam organizar informações da rotina.</p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question">
+                        Os dados ficam salvos?
+                        <span>＋</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Na versão local, os dados ficam armazenados no navegador do aparelho utilizado, por meio do armazenamento local.</p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question">
+                        O ZELO substitui um profissional de saúde?
+                        <span>＋</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não. O sistema é apenas um apoio organizacional e não substitui consultas, prescrições ou orientações profissionais.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light" id="equipe">
+        <div class="container team-content">
+            <span class="section-tag">NOSSA EQUIPE</span>
+            <h2>Um projeto desenvolvido com propósito.</h2>
+            <p>
+                O ZELO é um projeto acadêmico desenvolvido para apresentar uma proposta de tecnologia
+                voltada à organização e ao apoio nos cuidados.
+            </p>
+
+            <div class="team-card">
+                <div class="team-avatar">Z</div>
+                <h3>Equipe ZELO</h3>
+                <p>Desenvolvimento de Sistemas</p>
+                <span>Projeto acadêmico • 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contato">
+        <div class="container contact-grid">
+            <div>
+                <span class="section-tag">FALE CONOSCO</span>
+                <h2>Entre em contato.</h2>
+                <p>
+                    Tem dúvidas ou deseja conhecer melhor a proposta do ZELO? Envie uma mensagem.
+                </p>
+                <div class="contact-note">
+                    <span></span>
+                    <p>ZELO — Cuidado e organização de medicamentos.</p>
+                </div>
+            </div>
+               
+            <form class="contact-form" id="contactForm">
+                <label for="contactName">Nome</label>
+                <input type="text" id="contactName" placeholder="Digite seu nome" required>
+
+                <label for="contactEmail">E-mail</label>
+                <input type="email" id="contactEmail" placeholder="Digite seu e-mail" required>
+
+                <label for="contactMessage">Mensagem</label>
+                <textarea id="contactMessage" placeholder="Escreva sua mensagem..." required></textarea>
+
+                <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+                <p id="formFeedback" class="form-feedback" aria-live="polite"></p>
+
+                <button class="btn btn-primary" type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <a href="#inicio" class="logo footer-logo">
+            <img src="zelo-logo (2).png"  alt="logo do site">
+            
+        </a>
+        <p>© 2026 ZELO.</p>
+        <a href="#inicio">Voltar ao início ↑</a>
+    </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
